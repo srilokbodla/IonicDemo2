@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.button.button-balanced, .button.button-balanced.active, .button.button-balanced.activated, .button.button-balanced:hover {
+  border-color: transparent;
+  background-color: #f47a20;
+  color: black;
+}
+
+ion-header-bar.bar-stable.bar.bar-header {
+  background-color: #f47a20;
+}

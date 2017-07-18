@@ -1,0 +1,29 @@
+<ion-view title="Calculator" id="page2">
+  <ion-content padding="true" class="has-header" style="background: black">
+    <form id="Calculator" class="list">
+      <label class="item item-input" id="Calculator-input1">
+        <span class="input-label">Number1</span>
+        <input ng-model="form.number1" type="number" placeholder="in real numbers">
+      </label>
+      <div class="spacer" style="width: 300px; height: 13px;"></div>
+      <label class="item item-input" id="Calculator-input2">
+        <span class="input-label">Number2</span>
+        <input ng-model="form.number2" type="number" placeholder="in real numbers">
+      </label>
+      <div class="spacer" style="width: 300px; height: 13px;"></div>
+      <button type="button" class="button button-balanced  button-block" ng-click="total()">Add</button>
+      <button type="button" class="button button-balanced  button-block" ng-click="differ()">Subtract</button>
+      <button type="button" class="button button-balanced  button-block"
+              ng-click="form.number1 = form.number2= sum=difference=''">Reset Fields
+      </button>
+      <div class="spacer" style="width: 300px; height: 13px;"></div>
+      <div id="plotCalculator-markdown2" class="show-list-numbers-and-dots"
+           style="background: white;padding: 4px 4px 4px 14px;border-radius: 3px;">
+        Sum : {{sum}}
+        <br>
+        Difference : {{difference}}
+        <br>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
